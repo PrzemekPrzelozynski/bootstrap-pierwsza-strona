@@ -1,0 +1,249 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+    background-color: #6c757d;
+}
+header{
+    font-family: 'Roboto Mono', monospace;
+}
+.col-md-12{
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.col-md-10{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.col-md-12 img{
+    width: 100%;
+}
+#photo{
+    position: relative;
+    margin-top: 59px;
+    overflow: hidden;
+}
+#photo2{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    animation-name: rotate;
+    animation-duration: 2s;
+}
+@keyframes rotate {
+    from {
+     transform: rotateX(90deg)
+    }
+    to {
+    transform: rotateX(0deg);
+    }
+  }
+#headertext{
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    animation-name: animate;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    background-color: #e3e3e3; 
+    min-width: 200px;
+    border-radius: 5px;
+}
+#headertext h1{
+    font-size: 40px;
+    color: #737375;
+
+}
+@keyframes animate {
+    from {
+      right: -550px;
+    }
+    to {
+      top: 50px;
+      right: 100px
+    }
+  }
+h1{
+    color: White;
+    margin-top: 20px;
+    font-size: 50px;
+    
+}
+h3{
+    color:white;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+h2{
+    color: white;
+}
+.col-md-3{
+    padding-top: 10px;
+    border: 1px solid orange;
+}
+.col-md-3 p{
+    font-size: 25px;
+    color: orange;
+    margin-top: 10px;
+}
+.social a{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+.social a:hover{
+    color: orange;
+
+}
+.col-lg-2{
+    height: 285px;
+    padding: 0;
+    position: relative;
+    margin: 10px;
+}
+.col-lg-2 img{
+    min-height: 275px;
+}
+.text-img{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    background-color: white;
+}
+.text-img p{
+    margin-top: 10px;
+    color: orange;
+}
+.col-lg-8{
+    margin: auto;
+    position: relative;
+    text-align: left;
+    background-color: white;
+    border: 4px solid white;
+    border-radius: 5px;
+
+}
+.photo3{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 50%;
+}
+.photo3 img{
+    max-height: 360px;
+
+}
+.col-lg-4{
+    position: relative;
+    margin-bottom: 10px;
+}
+.col-lg-4 p{
+    color: white;
+    font-size: 18px;
+}
+.col-lg-4 a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: orange;
+    padding: 10px;
+}
+.col-lg-4 a:hover{
+    background-color: #db830f;
+}
+    @keyframes animateone {
+        from {
+          right: -250px;
+        }
+        to {
+          top: 50px;
+          right: 5px;
+        }
+      }
+
+.col-md-3 h1{
+    color: gray;
+    font-size: 25px;
+}
+.col-md-3 li{
+    list-style-type: none;
+}
+.link{
+    color: white;
+    display: inline-block;
+}
+.link:hover{
+    color: orange;
+}
+.footer-logo{
+    text-align: center;
+    margin-top: 10px;
+    
+}
+.col-3 a{
+    text-decoration: none;
+    color: white;
+    background-color: orange;
+    border-radius: 5px;
+    padding: 10px;
+    display: block;
+    margin-bottom: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 40%;
+
+}
+.col-3 a:hover{
+    background-color: #db830f;
+}
+.col-3 h3{
+    font-size: 35px;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+.book:hover{
+    text-decoration: none;
+    color: white;
+
+}
+.quote:hover{
+    text-decoration: none;
+    color: white;
+    
+}
+@media (max-width: 1199.98px){
+    .col-lg-2{
+        margin: 0;
+        overflow: hidden;
+    }
+    .photo3{
+        display: none;
+    }
+    #headertext{
+        position: absolute;
+        top: 50px;
+        right: 5px;
+        animation-name: animateone;
+    }
+    #headertext h1{
+        font-size: 22px;
+    }
+    #headertext h3{
+        font-size: 22px;
+    }
+    .footer-logo{
+        text-align: center;
+
+    }
+    .col-3 a{
+        width: 70%;
+
+    }
+}
